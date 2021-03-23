@@ -14,13 +14,5 @@ def extract_full_names(people):
         >>> extract_full_names(names)
         ['Ada Lovelace', 'Grace Hopper']
     """
-    result = []
-    for person in people:
-        result.append(person['first'] + ' ' + person['last'])
-    return result
 
-
-names = [
-    {'first': 'Ada', 'last': 'Lovelace'},
-    {'first': 'Grace', 'last': 'Hopper'},
-]
+    return [f"{person['first']} {person['last']}" for person in people]

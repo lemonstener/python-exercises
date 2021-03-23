@@ -1,5 +1,5 @@
 def friend_date(a, b):
-    """Given two friends, do they have any hobbies in common?
+    """Given two friends, do they have sny hobbies in common?
 
     - a: friend #1, a tuple of (name, age, list-of-hobbies)
     - b: same, for friend #2
@@ -16,6 +16,12 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
-    if(set(a[2]) & set(b[2])):
+
+    if set(a[2]) & set(b[2]):
         return True
-    return False
+    else:
+        return False
+
+    # can even do by converting to boolean!
+    #
+    # return bool(set(a[2] & set(b[2])

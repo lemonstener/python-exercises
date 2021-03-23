@@ -26,6 +26,7 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         >>> calculate('foo', 2, 3)
 
     """
+    res = 0
     if operation == "add":
         res = a + b
     elif operation == "subtract":
